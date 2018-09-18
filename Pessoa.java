@@ -7,15 +7,19 @@ public class Pessoa{
 	public Email email;
 
 
-	public Pessoa(String n, String s, Telefone t, Email e){
-
+	public Pessoa(String n, String s, LocalDate dN){
+		this.nome = n;
+		this.sobrenome = s;
+		this.dataNasc = dN;
 	}
+	
 	public Pessoa(String n, String s){
-
+		this.nome = n;
+		this.sobrenome = s;
 	}
 
 	public boolean addTelefone(String r, String n){
-
+		
 	}
 
 	public boolean addEmail(String r, String e){
