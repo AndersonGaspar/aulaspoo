@@ -1,4 +1,11 @@
 package poo;
 
-public class Matricula {
+public class Matricula{
+
+    private int x;
+    private int y;
+    private long matricula;
+
+
+
 }
