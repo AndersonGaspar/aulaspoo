@@ -2,6 +2,7 @@ package poo;
 
 import java.util.Scanner;
 import java.util.Random;
+import barcode.CodigoDeBarra;
 
 public class Principal{
 
@@ -35,6 +36,21 @@ public class Principal{
             return true;
         }else {
             return false;
+        }
+    }
+
+    public void gerarMatricula(){
+        long matricula;
+        int cout = 0;
+
+
+        Random random = new Random();
+
+        while(cout <= 10){
+            matricula = random.nextInt (200000000-20000000)+200000000;
+            //System.out.println(matricula);
+            CodigoDeBarra.gerarCodigoDeBarra(matricula, "saida"+matricula+".png");
+            cout = cout+1;
         }
     }
 
